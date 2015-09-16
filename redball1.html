@@ -8,7 +8,16 @@
             }
             
             function moveright(){
-                redball.left=redball.left+10;
+                redball.left= redball.left +10;
+            }
+            function moveleft(){
+                redball.left= redball.left -10;
+            }
+            function moveup(){
+                redball.top= redball.top -5;
+            }
+            function movedown(){
+                redball.top= redball.top +5;
             }
         </script>
     </head>
@@ -16,5 +25,8 @@
         <img id="redball" src="http://lrn.icstars.org/redball.jpg"></img>
        <button onclick ="sayhello()">Hello Worlds</button> 
        <button onclick ="moveright()">move right</button>
+       <button onclick ="moveleft()">move left</button>
+       <button onclick ="moveup()">move up</button>
+       <button onclick ="movedown()">move down</button>
     </body>
 </html>
